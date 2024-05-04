@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    font-size: 14px;
+    line-height: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1.5px solid-black;
+    cursor: pointer;
+}
+
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: brown;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font: weight 400px; ;
+    font-size: 20px;
+}
+
+.pre-title::before{
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    transition: 0.2s ease-in-out;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.logo a{
+    color: black;
+}
+
+nav ul li a{
+    color: black;
+}
+
+#home{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.home-name{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+    color: black;
+}
+
+.home-right img{
+    width: 350px;
+    border-radius: 10px;
+}
+
+.home-right{
+    display: flex;
+    justify-content: center;
+}
+
+
+section{
+    padding-left: 30px;
+    padding-bottom:30px ;
+}
+
+#About{
+    background-color: #bcbfcf;
+    padding: 40px;
+}
+
+.section-title-about{
+    text-align: center;
+    margin: 20px;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.about{
+    padding: 20px;
+    text-align: center;
+    background: black;
+    border-radius: 10px;
+}
+
+.about h4{
+    color: white;
+    margin: 10px;
+}
+
+.about p{
+    color: aliceblue;
+}
+
+.about-icon{
+    background-color: blanchedalmond;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* skills */
+
+#skills{
+    padding: 40px;
+    background: white;
+}
+
+.section-title-skills{
+    text-align: center;
+    margin: 40px;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.experience{
+    display: flex;
+    gap: 20px;
+}
+
+.experience line{
+    padding: 0 0.7rem;
+}
+
+.experience .line div {
+    width: 2px;
+    height: 100%;
+    background: black;
+    position: relative;
+}
+
+.experience-info{
+    margin: 0.3rem 0;
+}
+
+.experience-date{
+    margin-bottom: 20px ;
+}
+
+.experience .line div::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.skill-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+
+.skills-right{
+    line-height: 20px;
+    padding: 0 15px;
+}
+
+#contact{
+    padding: 30px;
+    background-color: #bcbfcf;
+}
+
+.contact-form div{
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input :placeholder,
+.contact-form textarea :placeholder{
+    color : black;
+}
+
+.contact-form input :focus,
+.contact-form textarea :focus{
+    outline: none;
+    border: 1px solid black;
+}
+
+.btn-submit{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+footer{
+    margin-bottom: 0;
+    padding: 40px 0;
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+.footer-icons{
+    margin-bottom: 15px;
+}
+
+.footer-icons a{
+    margin: 0 10px;
+}
+
+.footer-icons a:hover{
+    fill: black;
+}
+
+.footer-icons{
+    fill: gray;
+}
+
